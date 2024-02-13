@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@700&family=Urbanist:wght@300;400;500;600&family=Yuji+Syuku&display=swap");
+
+/* font-family: 'Tourney', sans-serif;
+font-family: 'Urbanist', sans-serif;
+font-family: 'Yuji Syuku', serif; */
+
+:root {
+  /* color var */
+  --darkGreen: #002029;
+  --richBlack: #00303d;
+  --midnightGreen: #004052;
+  --prussian-blue: #0b3047;
+  --header: rgba(0, 64, 82, 0.5);
+  --white: #fff;
+
+  /* font-weight */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
+  text-decoration: none;
+
+  transition: 0.5s;
+}
+
+body {
+  width: 430px;
+  overflow-x: hidden;
+  background-color: var(--darkGreen);
+  background-image: url("../assets/backgroundMobile.png");
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3vh;
+
+  font-family: "Tourney", sans-serif;
+  font-size: 2.2em;
+  font-weight: var(--semibold);
+}
+
+.albumContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin: 7vh;
+  font-family: "Urbanist", sans-serif;
+}
+
+.albumCover {
+  width: 330px;
+  align-self: center;
+}
+
+.albumTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid var(--white);
+}
+
+.albumInfoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.albumInfoContainer h2 {
+  font-weight: var(--light);
+}
+
+.albumInfoSubContainer h2 {
+  font-size: 1.2em;
+}
+
+.duracao {
+  font-size: 0.8em;
+}
+
+/* ---------------------------- */
+.tracklistContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 5vh;
+  font-family: "Yuji Syuku", serif;
+  text-align: center;
+}
+
+.tracklistTitle {
+  font-size: 2.2em;
+}
+
+.tracklistText {
+  font-size: 1em;
+  line-height: 180%;
+}
+
+/* ---------------------------- */
+
+.artistContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin: 2vh 3vw;
+}
+
+.artistTitle {
+  font-family: "Yuji Syuku", serif;
+  font-size: 3em;
+}
+
+.artistImage {
+  width: 330px;
+}
+
+.artistTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.artistTextContainer h3 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: var(--light);
+}
+
+.artistText {
+  text-align: right;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--richBlack);
+
+  margin-top: 3vh;
+  padding: 5vh;
+}

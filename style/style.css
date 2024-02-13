@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@700&family=Urbanist:wght@300;400;500;600&family=Yuji+Syuku&display=swap");
+
+/* font-family: 'Tourney', sans-serif;
+font-family: 'Urbanist', sans-serif;
+font-family: 'Yuji Syuku', serif; */
+
+:root {
+  /* color var */
+  --darkGreen: #002029;
+  --richBlack: #00303d;
+  --midnightGreen: #004052;
+  --prussian-blue: #0b3047;
+  --header: rgba(0, 64, 82, 0.5);
+  --white: #fff;
+
+  /* font-weight */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
+  text-decoration: none;
+
+  transition: 0.5s;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--darkGreen);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-image: url(../assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  scroll-behavior: smooth !important;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3vh 5vw;
+
+  position: fixed;
+  z-index: 1;
+
+  background-color: var(--header);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.headerTitle {
+  font-family: "Tourney", sans-serif;
+  font-weight: var(--bold);
+  font-size: 6em;
+}
+
+nav {
+  display: flex;
+  gap: 3vw;
+}
+
+.navItem {
+  font-size: 2em;
+  font-weight: var(--semibold);
+  font-family: "Urbanist", sans-serif;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15vh 0 5vh;
+}
+
+.albumContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5vh 5vw 5vh 2.5vw;
+}
+
+.albumTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.descricaoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 18vh;
+}
+
+.descricaoSubContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  font-family: "Urbanist", sans-serif;
+}
+
+.descricaoText {
+  font-size: 2.2em;
+  font-weight: var(--semibold);
+}
+
+.descricaoSubText {
+  font-size: 2em;
+  font-weight: var(--regular);
+}
+
+.tracklistContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7vh;
+  gap: 3vh;
+  font-family: "Yuji Syuku", serif;
+}
+
+.tracklistTitle {
+  font-size: 3em;
+}
+
+.tracklistText {
+  font-size: 2em;
+}
+
+.albumImage {
+  width: 550px;
+  height: 550px;
+}
+
+.albumImage:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  border: 1px var(--white) solid;
+  margin: 5vh 0;
+}
+
+.infoContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoSubContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoText {
+  width: 100%;
+  text-align: left;
+  font-family: "Urbanist", sans-serif;
+  background-color: var(--prussian-blue);
+  font-size: 2.5em;
+  font-weight: var(--light);
+  padding: 4vh 2vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.albumArtistImage {
+  width: 100%;
+}
+
+/* -------------------------- */
+
+.artistContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20vh;
+  padding: 3vh 3vw;
+  gap: 5vw;
+}
+
+.artistText {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  font-weight: var(--light);
+}
+
+.artistInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.artistTitle {
+  font-size: 5em;
+  font-family: "Yuji Syuku", serif;
+  text-transform: uppercase;
+  margin-inline-start: 3vw;
+}
+
+.artistSubText {
+  font-family: "Urbanist", sans-serif;
+  font-size: 2em;
+}
+
+.artistImg {
+  width: 100%;
+  height: 90%;
+}
+
+/* -------------------------- */
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh;
+  background-color: var(--midnightGreen);
+}
+
+.footerSub {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Urbanist", sans-serif;
+}
+
