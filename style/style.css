@@ -28,6 +28,7 @@ font-family: 'Yuji Syuku', serif; */
   color: var(--white);
   text-decoration: none;
 
+  scroll-behavior: smooth;
   transition: 0.5s;
 }
 
@@ -68,7 +69,12 @@ header {
   font-size: 6em;
 }
 
-nav {
+.menuImg{
+  display: none;
+}
+
+
+.headerNav {
   display: flex;
   gap: 3vw;
 }
@@ -92,6 +98,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   padding: 5vh 5vw 5vh 2.5vw;
+}
+
+.spotifyContainer{
+  display: none;
 }
 
 .albumTop {
@@ -140,6 +150,10 @@ main {
   font-size: 2em;
 }
 
+#albumMobile {
+  display: none;
+}
+
 .albumImage {
   width: 550px;
   height: 550px;
@@ -155,6 +169,10 @@ main {
   flex-direction: column;
   width: 70%;
   align-items: center;
+}
+
+.menuSvg{
+  display: none;
 }
 
 .divider {
@@ -193,6 +211,11 @@ main {
   width: 100%;
 }
 
+.artistImg{
+  width: 550px;
+  height: 350px;
+}
+
 /* -------------------------- */
 
 .artistContainer {
@@ -200,7 +223,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20vh;
+  margin-top: 35vh;
   padding: 3vh 3vw;
   gap: 5vw;
 }
@@ -231,9 +254,9 @@ main {
   font-size: 2em;
 }
 
-.artistImg {
-  width: 100%;
-  height: 90%;
+.artistImg{
+  width: 950px;
+  height: 550px;
 }
 
 /* -------------------------- */
@@ -255,3 +278,130 @@ footer {
   font-family: "Urbanist", sans-serif;
 }
 
+.githubIcon{
+  height: 50px;
+}
+
+.footerNav{
+  display: flex;
+  gap: 5vw;
+}
+
+/* ----------------------- */
+
+@media (max-width: 1080px) {
+
+  header {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headerNav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--header);
+    padding: 4vh;
+    position: absolute;
+    right: 0;
+    top: 15vh;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  .menuSvg{
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 5vw;
+    height: 50px;
+    width: 50px;
+    color: var(--white);
+  }
+
+  .spotifyContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 5vh;
+  }
+
+  .spotifyTitle{
+    font-size: 3em;
+    font-weight: var(--bold);
+  }
+
+  .spotifySubtitle{
+    font-size: 2em;
+    font-weight: var(--medium);
+  }
+
+  .spotifyInfo{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spotifyText{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 1.8em;
+  }
+
+  #divider{
+    margin: 1.5vh 0
+  }
+
+  .fullDivider{
+    width: 70%;
+    border: solid 1px var(--white);
+    margin: 2vh 0 1vh;
+  }
+
+  .albumTop {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .leftContainer {
+    width: 100%;
+  }
+
+  .descricaoContainer {
+    display: none;
+  }
+
+  .descricaoSubContainer {
+    gap: 5vh;
+  }
+
+  #albumMobile {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+
+  #albumWeb {
+    display: none;
+  }
+
+  .tracklistContainer {
+    text-align: center;
+  }
+
+  .artistContainer{
+    flex-direction: column;
+    text-align: center;
+    margin: 2vh;
+  }
+
+  .artistImg{
+    width: 550px;
+    height: 350px;
+  }
+
+  
+}
