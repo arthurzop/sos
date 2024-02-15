@@ -4,16 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="./style/style.css" />
-  <link rel="icon" href="./assets/image 1 (1).png" />
+  <link rel="icon" href="./assets/albumImage.png" />
   <title>SOS</title>
 </head>
 
 <body>
   <header>
     <h1 class="headerTitle">SOS</h1>
-    <img src="./assets/Menu.png" alt="menu" class="menuImg" onclick="openNav()" />
+    <img src="./assets/menuHamburguer.svg" alt="menu" class="menuSvg" onclick="openNav()" />
     <div id="menu">
       <nav class="headerNav">
         <a href="#album" class="navItem">Álbum</a>
@@ -27,7 +26,7 @@
   <main>
     <div class="albumContainer">
       <div class="albumTop">
-        <img src="./assets/image 1 (1).png" alt="sos" class="albumImage" id="albumMobile" />
+        <img src="./assets/albumImage.png" alt="sos" class="albumImage" id="albumMobile" />
         <div class="spotifyContainer">
           <h1 class="spotifyTitle">SOS</h1>
           <h2 class="spotifySubtitle">Sza</h2>
@@ -63,7 +62,7 @@
           <div class="infoContainer">
             <div class="divider"></div>
             <div class="infoSubContainer">
-              <img src="./assets/image 3.png" alt="sza" class="albumArtistImage" />
+              <img src="./assets/artistDrawing.png" alt="sza" class="albumArtistImage" />
               <div class="infoText">
                 <b>SOS</b> é o segundo álbum de estúdio da cantora e
                 compositora estadunidense SZA. Lançado em 9 de dezembro de
@@ -74,7 +73,7 @@
           </div>
         </div>
         <div class="tracklistContainer" id="tracklist">
-          <img src="./assets/image 1 (1).png" alt="sos" class="albumImage" id="albumWeb" />
+          <img src="./assets/albumImage.png" alt="sos" class="albumImage" id="albumWeb" />
           <h1 class="tracklistTitle">TrackList</h1>
           <div class="tracklistText">
             1. SOS <br />
@@ -125,7 +124,7 @@
   </main>
   <footer id="detalhes">
     <a href="https://github.com/arthurzop">
-      <img src="./assets//image 5.png" alt="git" class="githubIcon" />
+      <img src="./assets/githubIcon.svg" alt="git" class="githubIcon" />
     </a>
     <div class="footerSub">
       <nav class="footerNav">
@@ -136,15 +135,8 @@
     </div>
   </footer>
 
-  <script>
-    function openNav() {
-      if (menu.style.display === "block") {
-        menu.style.display = "none";
-      } else {
-        menu.style.display = "block";
-      }
-    }
-  </script>
+   
+<script src="./script/script.js"></script>
 </body>
 
 </html>

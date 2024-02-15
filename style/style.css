@@ -171,6 +171,10 @@ main {
   align-items: center;
 }
 
+.menuSvg{
+  display: none;
+}
+
 .divider {
   width: 100%;
   border: 1px var(--white) solid;
@@ -274,6 +278,15 @@ footer {
   font-family: "Urbanist", sans-serif;
 }
 
+.githubIcon{
+  height: 50px;
+}
+
+.footerNav{
+  display: flex;
+  gap: 5vw;
+}
+
 /* ----------------------- */
 
 @media (max-width: 1080px) {
@@ -297,11 +310,14 @@ footer {
     display: none;
   }
 
-  .menuImg{
+  .menuSvg{
     display: block;
     position: absolute;
     right: 0;
-    padding: 5vw;
+    margin: 5vw;
+    height: 50px;
+    width: 50px;
+    color: var(--white);
   }
 
   .spotifyContainer{
